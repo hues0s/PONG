@@ -4,7 +4,7 @@ Simple java version of this world-famous game.
 
 ## Features
 * Player vs. player gamemode (Local multiplayer)
-* Multiplayer *Coming soon*
+* Multiplayer -*Coming soon*-
 
 ## How to play?
 * Player 1 moves using 'W' and 'S'
