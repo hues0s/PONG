@@ -8,7 +8,7 @@ import graphics.Board;
 public class KeyEventHandler implements KeyListener {
 
 	private Board board;
-	
+	private int hola;
 	public static final int P1UP = KeyEvent.VK_W;
 	public static final int P1DOWN = KeyEvent.VK_S;
 	public static final int P2UP = KeyEvent.VK_UP;
