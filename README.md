@@ -14,3 +14,4 @@ Simple java version of this world-famous game.
 
 * **Héctor Ullate** - [hues0s](https://github.com/hues0s)
 * **Carlos Segundo** - [csegundo](https://github.com/csegundo)
+* **Daniel Gallardo** - [danisilver](https://github.com/danisilver)
