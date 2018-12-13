@@ -1,9 +1,14 @@
 # PONG
 
-Simple java version of this world-famous game. Currently, we are trying out to implement multiplayer game. *Continuara...*
+Simple java version of this world-famous game.
+
+## Features
+* Player vs. player gamemode (Local multiplayer)
+* Multiplayer *Coming soon*
 
 ## How to play?
-*...*
+* Player 1 moves using 'W' and 'S'
+* Player 2 moves using '↑' and '↓'
 
 ## Authors
 
