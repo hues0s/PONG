@@ -23,7 +23,7 @@ public class GameWindow extends JFrame {
 		Image icon = Toolkit.getDefaultToolkit().getImage("pong.png");
 		this.setIconImage(icon);
 		
-		this.gameBoard = new Board(this);
+		this.gameBoard = new Board();
 		
 		this.add(gameBoard);
 		this.addKeyListener(new KeyEventHandler(this.gameBoard));

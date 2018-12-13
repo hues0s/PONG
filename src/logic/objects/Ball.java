@@ -1,9 +1,11 @@
 package logic.objects;
 
+import java.util.Random;
+
 import graphics.Board;
 import graphics.GameWindow;
 
-public class Ball extends Thread {
+public class Ball extends Thread{
 
 	public static final int WIDTH = 15;
 	public static final int HEIGHT = 15;
@@ -17,8 +19,11 @@ public class Ball extends Thread {
 	private int directionY;
 	private Board board;
 	private boolean paintEnter;
+	private Random r;//TODO
 	
 	public Ball(Board board){
+		r = new Random();//TODO
+		
 		this.posX = INIT_POSX;
 		this.posY = INIT_POSY;
 		this.board = board;
@@ -40,8 +45,6 @@ public class Ball extends Thread {
 			}
 			board.repaint();
 		}
-		this.waitXTenths(30);
-		board.endActivity();
 	}
 	
 	private void move(){
@@ -58,6 +61,10 @@ public class Ball extends Thread {
 		} catch (InterruptedException ex) {
 			Thread.currentThread().interrupt();
 		}
+	}
+	// TODO FUNCION NUEVA
+	public int generateInitPosition(){
+		return this.r.nextInt(GameWindow.DIM_FRAME_Y - 40) + 5;
 	}
 	
 	private void paintEnter(){
@@ -95,6 +102,10 @@ public class Ball extends Thread {
 
 	public int getPosY() {
 		return posY;
+	}
+	
+	public void setPosY(int y){
+		this.posY = y;
 	}
 
 }
