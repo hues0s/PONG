@@ -1,11 +1,12 @@
 package graphics;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
-
 import controller.KeyEventHandler;
 
 @SuppressWarnings("serial")
-public class GameWindow extends JFrame{
+public class GameWindow extends JFrame {
 	
 	public static final int DIM_FRAME_X = 650;
 	public static final int DIM_FRAME_Y = 350;
@@ -16,11 +17,13 @@ public class GameWindow extends JFrame{
 		this.setSize(DIM_FRAME_X, DIM_FRAME_Y);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// cuando clickes X, se cierra la ventana y el programa;
 															// si no, el programa sigue aunque cierres la ventana.
-		this.setTitle("PONG");
-		this.setLocation(400, 250);
+		this.setTitle("PONG Game");
+		setLocationRelativeTo(null);
 		this.setResizable(false);
+		Image icon = Toolkit.getDefaultToolkit().getImage("pong.png");
+		this.setIconImage(icon);
 		
-		this.gameBoard = new Board();
+		this.gameBoard = new Board(this);
 		
 		this.add(gameBoard);
 		this.addKeyListener(new KeyEventHandler(this.gameBoard));

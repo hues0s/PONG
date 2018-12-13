@@ -1,11 +1,12 @@
 package logic;
-import graphics.GameWindow;
 
-public class Main{
-	
+import graphics.MenuWindow;
+
+public class Main {
+		
 	public static void main(String[] args) {
 		
-		new GameWindow();
+		new MenuWindow(); // new GameWindow();
 		
 	}
 }

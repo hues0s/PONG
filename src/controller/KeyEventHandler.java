@@ -5,12 +5,12 @@ import java.awt.event.KeyListener;
 
 import graphics.Board;
 
-public class KeyEventHandler implements KeyListener{
+public class KeyEventHandler implements KeyListener {
 
 	private Board board;
 	
-	public static final int P1UP = KeyEvent.VK_RIGHT;
-	public static final int P1DOWN = KeyEvent.VK_LEFT;
+	public static final int P1UP = KeyEvent.VK_W;
+	public static final int P1DOWN = KeyEvent.VK_S;
 	public static final int P2UP = KeyEvent.VK_UP;
 	public static final int P2DOWN = KeyEvent.VK_DOWN;
 	
