@@ -17,6 +17,7 @@ public class MenuWindow extends JFrame implements ActionListener {
 
 	private static final int DIM_FRAME_X = 350;
 	private static final int DIM_FRAME_Y = 268;
+	prueba;
 	
 	private JButton exitButton, creditsButton, gameButton, settignsButton;
 	private JLabel text;
