@@ -53,11 +53,6 @@ public class MenuWindow extends JFrame implements ActionListener {
 		button.setBounds(DIM_FRAME_X/8, DIM_FRAME_Y/9 - increase, 100, 25);
 		add(button, BorderLayout.CENTER);
 		this.getContentPane().add(button);
-		button.addActionListener(this);
-//		Border line = new LineBorder(Color.BLACK);
-//		Border margin = new EmptyBorder(5, 15, 5, 15);
-//		Border compound = new CompoundBorder(line, margin);
-//		button.setBorder(compound);
 		button.setForeground(Color.BLACK);
 		button.setBackground(Color.LIGHT_GRAY);
 		button.setVisible(true);
@@ -99,6 +94,10 @@ public class MenuWindow extends JFrame implements ActionListener {
 		this.playersNameDialog.add(playerName1);
 		this.playersNameDialog.add(playerName2);
 		this.playersNameDialog.setVisible(true);
+	}
+	
+	private void getTextBoxNames(JDialog playersNameDialog) {
+		
 	}
 	
 	private void creditsButtonAction() {
