@@ -11,7 +11,6 @@ public class Player extends Thread{
 	private int posX;
 	private int posY;
 	private int score;
-	private String name;
 	
 	public Player(int x, int y){
 		this.posX = x;

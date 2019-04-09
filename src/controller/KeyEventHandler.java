@@ -1,11 +1,11 @@
 package controller;
 
+import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 
 import graphics.Board;
 
-public class KeyEventHandler implements KeyListener {
+public class KeyEventHandler extends KeyAdapter {
 
 	private Board board;
 	public static final int P1UP = KeyEvent.VK_W;
@@ -59,14 +59,6 @@ public class KeyEventHandler implements KeyListener {
 			board.movePlayer(2, 'u');
 			board.repaint();
 		}
-	}
-
-	@Override
-	public void keyReleased(KeyEvent e) {
-	}
-
-	@Override
-	public void keyTyped(KeyEvent e) {		
 	}
 	
 }

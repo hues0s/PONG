@@ -101,10 +101,11 @@ public class Board extends Canvas{
 	}
 	
 	public boolean isFinished(){
-		for(int i = 0; i < Board.NUM_PLAYERS; i++) if(playerArray[i].getScore() == Board.MAX_POINTS){
-			this.end = true;
-			return true;
-		}
+		for(int i = 0; i < Board.NUM_PLAYERS; i++)
+			if(playerArray[i].getScore() == Board.MAX_POINTS){
+				this.end = true;
+				return true;
+			}
 		return false;
 	}
 	

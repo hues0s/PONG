@@ -15,14 +15,14 @@ public class Ball extends Thread{
 	
 	private int posX;
 	private int posY;
-	private int directionX; // indica el sentido de la bola;
+	private int directionX;
 	private int directionY;
 	private Board board;
 	private boolean paintEnter;
-	private Random r;//TODO
+	private Random r;
 	
 	public Ball(Board board){
-		r = new Random();//TODO
+		r = new Random();
 		
 		this.posX = INIT_POSX;
 		this.posY = INIT_POSY;
