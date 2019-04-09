@@ -1,17 +1,9 @@
 # PONG
 
-Simple java version of this world-famous game.
-
-## Features
-* Player vs. player gamemode (Local multiplayer)
-* Multiplayer -*Coming soon*-
+Simple java version of this world-famous game, made while introducing myself to Swing and graphic libraries in Java.
 
 ## How to play?
 * Player 1 moves using 'W' and 'S'
 * Player 2 moves using '↑' and '↓'
 
-## Authors
-
-* **Héctor Ullate** - [hues0s](https://github.com/hues0s)
-* **Carlos Segundo** - [csegundo](https://github.com/csegundo)
-* **Daniel Gallardo** - [danisilver](https://github.com/danisilver)
+* The game will finish when one of the players reaches 5 points.
